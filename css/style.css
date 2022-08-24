@@ -140,4 +140,72 @@ body {
   background-color: #1a4031;
   cursor: pointer;
 }
+
+@media screen and (max-width: 720px) {
+  body {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 345px;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .image {
+    width: 100%;
+    height: 240px;
+    background-image: url(../images/image-product-mobile.jpg);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  body .container .text-cont {
+    width: 100%;
+    height: 369px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  body .container .text-cont .aux {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  body .container .text-cont h1 {
+    margin-left: 26px;
+    font-size: 30px;
+  }
+  body .container .text-cont p {
+    margin-left: 26px;
+    margin-top: 10px;
+  }
+  body .container .text-cont .prices {
+    margin-left: 26px;
+  }
+  body .container .text-cont .cart {
+    width: 100%;
+    max-width: 296px;
+    left: 25px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
