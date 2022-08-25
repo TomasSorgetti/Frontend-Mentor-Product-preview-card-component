@@ -35,7 +35,8 @@ body{
     background-color: #ffffff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     .aux{
         margin-top: 30px;
         margin-left: 34px;
@@ -64,12 +65,9 @@ body{
     }
     // Prices
     .prices{
-        position: absolute;
-        bottom: 100px;
-        margin-left: 35px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        margin-left: 30px;
         .price-one{
             font-size: 30px;
             font-weight: 700;
@@ -88,11 +86,10 @@ body{
         svg{
             margin-right: 10px;
         }
+        margin-left: 30px;
+        margin-top: 20px;
         width: 240px;
         height: 50px;
-        position: absolute;
-        left: 30px;
-        bottom: 30px;
         border-radius: 10px;
         background-color: #3d8168;
         border: none;
@@ -155,7 +152,7 @@ body{
                     margin-left: 26px;
                 }
                 .cart{
-                    width: 100%;
+                    width: 90%;
                     max-width: 296px;
                     left: 25px;
                 }
@@ -163,4 +160,15 @@ body{
         }
         
     }
+}
+@media screen and (max-width:350px) {
+    body .container .text-cont .cart{
+        width: 83%;
+        max-width: 296px;
+    }    
+}
+@media screen and (max-width:325px) {
+    body .container .text-cont .cart{
+        margin-top: 5px;
+    }    
 }

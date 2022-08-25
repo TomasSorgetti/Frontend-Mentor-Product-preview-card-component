@@ -48,7 +48,13 @@ body {
   background-color: #ffffff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .text-cont .aux {
@@ -81,18 +87,13 @@ body {
 }
 
 .text-cont .prices {
-  position: absolute;
-  bottom: 100px;
-  margin-left: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 30px;
 }
 
 .text-cont .prices .price-one {
@@ -110,11 +111,10 @@ body {
 }
 
 .text-cont .cart {
+  margin-left: 30px;
+  margin-top: 20px;
   width: 240px;
   height: 50px;
-  position: absolute;
-  left: 30px;
-  bottom: 30px;
   border-radius: 10px;
   background-color: #3d8168;
   border: none;
@@ -203,9 +203,22 @@ body {
     margin-left: 26px;
   }
   body .container .text-cont .cart {
-    width: 100%;
+    width: 90%;
     max-width: 296px;
     left: 25px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body .container .text-cont .cart {
+    width: 83%;
+    max-width: 296px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  body .container .text-cont .cart {
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
